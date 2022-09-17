@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const mongoURI = 'mongodb://localhost:27017/CCP'
+const mongoURI = 'mongodb+srv://curriermjeremy:Caxasnuts2@@cluster0.hdau3pi.mongodb.net/?retryWrites=true&w=majority'
 
 mongoose.connect(mongoURI, {
     useNewUrlParser: true
