@@ -1,0 +1,65 @@
+const mongoose = require('mongoose')
+
+const raceSchema = new mongoose.Schema({
+    name: String,
+	racePoints: Number,
+	source: String,
+	scoreModifierSTR: Number,
+	scoreModifierDex: Number,
+	scoreModifierCon: Number,
+	scoreModifierInt: Number,
+	scoreModifierWis: Number,
+	scoreModifierCha: Number,
+	type: String,
+	size: String,
+	baseSpeeds: String,
+	languages: String,
+	racialimmunities: String,
+	spellLikeAbilities: String,
+	darkvision: String,
+	darkvisionDistance: Number,
+	lowLightVision: String,
+	lowLightVisionDistance: String,
+	otherRacialAbility1: String,
+	otherRacialAbility2: String,
+	otherRacialAbility3: String,
+	otherRacialAbility4: String,
+	otherRacialAbility5: String,
+	defensiveTraits: String,
+	offensiveTraits: String,
+	featAndSkillTraits: String,
+	movementTraits: String,
+	senseTraits: String,
+	alternateTrait1: String,
+	alternateTrait2: String,
+	alternateTrait3: String,
+	alternateTrait4: String,
+	alternateTrait5: String,
+	alternateTrait6: String,
+	alternateTrait7: String,
+	alternateTrait8: String,
+	racialFeats: String,
+	racialItems: String,	
+	favoredClassOptions: String,
+	racialArchetypesAndBloodlines: String,
+	randomStartingAgeAdulthood: String,
+	randomStartingAgeIntuitive: String,
+	randomStartingAgeSelfTaught: String,
+	randomStartingAgeTrained: String,
+	randomHeightMale: String,
+    randomWeightMale: String,
+    randomHeightFemale: String,
+    randomWeightFemale: String,
+	otherDescriptionNotes: String,
+	racialLore: String,
+    image: String,
+	notes: String
+
+},
+{
+    timestamps:true
+})
+
+const Race = mongoose.model('Race', raceSchema)
+
+module.exports = Race
