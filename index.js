@@ -2,21 +2,21 @@ const express = require('express')
 const app = express()
 const PORT = 3001
 const morgan = require('morgan')
-const armorRoutes = require('../routes/armorRoutes')
-const baseClassRoutes = require('../routes/baseClassRoutes')
-const raceRoutes = require('../routes/raceRoutes')
-const featRoutes = require('../routes/featRoutes')
-const itemRoutes = require('../routes/itemRoutes')
-const prestigeClassRoutes = require('../routes/prestigeClassRoutes')
-const shieldRoutes = require('../routes/shieldRoutes')
-const spellRoutes = require('../routes/spellRoutes')
-const weaponRoutes = require('../routes/weaponRoutes')
-
+const armorRoutes = require('./routes/armorRoutes')
+const baseClassRoutes = require('./routes/baseClassRoutes')
+const raceRoutes = require('./routes/raceRoutes')
+const featRoutes = require('./routes/featRoutes')
+const itemRoutes = require('./routes/itemRoutes')
+const prestigeClassRoutes = require('./routes/prestigeClassRoutes')
+const shieldRoutes = require('./routes/shieldRoutes')
+const spellRoutes = require('./routes/spellRoutes')
+const weaponRoutes = require('./routes/weaponRoutes')
+require('dotenv').config()
 
 const cors = require('cors')
 
 
-require('../db/connection')
+require('./db/connection')
 
 app.use(cors())
 app.use(morgan('tiny'))

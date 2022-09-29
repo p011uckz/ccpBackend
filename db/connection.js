@@ -1,8 +1,8 @@
 const mongoose = require('mongoose')
 
-const mongoURI = 'mongodb+srv://curriermjeremy:Caxasnuts2@@cluster0.hdau3pi.mongodb.net/?retryWrites=true&w=majority'
 
-mongoose.connect(mongoURI, {
+
+mongoose.connect(process.env.MONGOURI, {
     useNewUrlParser: true
 })
 .then(instance => {
